@@ -17,7 +17,9 @@ app.get('/', function (req, res) {
 // about page
 app.get('/about', function (req, res) {
     // res.sendFile(path.join(__dirname, "pages", "about.html"));
-    res.render('about')
+    res.render('about', {
+        title: "About us",
+    })
       });
 
 
